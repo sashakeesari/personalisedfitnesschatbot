@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
+    </head>
+    <body>
+        <div class="img-container">
+        <img
+        src="{{ url_for('static', filename='images/frstpage.jpg') }}">
+        
+        <button id="chatOpen">Get Started</button>
+    </div>
+
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+
+
+
+
+    <script>
+        window.botpressWebChat.init({
+            // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+            "botId": "c90ae683-c646-4b2d-b4c1-9038ecf1b2f2",
+            "clientId": "c90ae683-c646-4b2d-b4c1-9038ecf1b2f2",
+
+            // Set the URL for the Botpress WebChat JavaScript file and the messaging server
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+            "messagingUrl": "https://messaging.botpress.cloud",
+
+            // Set the name of the bot that will be displayed in the WebChat interface
+            "botName": "NutriCoach",
+
+            // Set the width of the WebChat container and layout to 100% (Full Screen)
+            "containerWidth": "100%25",
+            "layoutWidth": "100%25",
+            "stylesheet": "https://webchat-styler-css.botpress.app/prod/3ef5470f-ec9b-4367-a546-798b6e239345/v43982/style.css",
+            // Hide the widget and disable animations
+            "hideWidget": true,
+            "disableAnimations": true,
+        });
+
+        // Opens up the Chatbot by default
+        // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+        document.getElementById('chatOpen').addEventListener('click',function(){
+        console.log("Showing bot...")
+        window.botpressWebChat.sendEvent({type:"show"})
+        });
+        //window.botpressWebChat.onEvent(
+        //function () {
+            //window.botpressWebChat.sendEvent({ type: "show" });
+        //},
+        //["LIFECYCLE.LOADED"]//
+    //);
+    
+    </script>
+
+    </body>
+    </html>

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+    /** {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    }*/
+    /*
+    nav {
+        height: 80px;
+        background: #0b0b0a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem calc((100vw - 1300px) / 2);
+    }
+    
+    .logo {
+        color: #0b0906;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-size:italic  ;
+        padding: 0 2rem;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #000;
+        padding: 0 1.5rem;
+    }
+    
+    nav a:hover {
+        color: #fff;
+    }
+    
+    /*.hero {
+        background: #0a0b0c;
+    }*/
+    
+    /*
+    .column-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #000;
+        padding: 0rem 2rem;
+    }
+    
+    .column-left h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }*/
+    /*.column-left p {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }*/
+    
+    button {
+        
+        font-size: 1rem;
+        border: none;
+        color: #55AD9B;
+        background: #000;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute; /* Position the button absolutely */
+    top: 80%; /* Position the button vertically centered */
+    left: 67%; /* Position the button horizontally centered */
+    transform: translate(-50%, -50%); /* Center the button perfectly */
+    padding: 20px 50px; /* Adjust padding as needed */
+    
+    
+    text-decoration: none; /* Remove underline */
+    
+
+    }
+    
+    button:hover {
+        background: #95D2B3;
+        color: #000;
+    }
+    
+    /*.column-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 5rem;
+    }
+    
+    .hero-image {
+        width: 100%;
+        height: 100%;
+    
+    }*/
+    .body{
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        
+        background-size: cover; /* Cover the entire viewport */
+        background-position:  center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+
+
+    /* @media screen and (max-width: 768px) {
+        .hero-container {
+        grid-template-columns: 1fr;
+        }
+    }*/
+    
